@@ -61,3 +61,22 @@ print("Mom's name is " + str(c.mom) + "\n" + "Dad's name is " + str(c.dad) + "\n
 print("================================")
 print("Mom is " + str(c.count) + " years old \n" + "& Dad is " + str(c.count2) + " years old")
 print("================================")
+
+"""
+Parent class initialized
+Child class initialized
+Enter moms age: 15
+Too young to get married mom 
+Enter dads age: 19
+Perfect age dad, lets go. 
+Enter moms name: Jane
+Enter dads name: Joe
+================================
+Mom's name is Jane
+Dad's name is Joe
+Their child's mame is John
+================================
+Mom is 15 years old 
+& Dad is 19 years old
+================================
+"""
