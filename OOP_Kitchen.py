@@ -55,3 +55,16 @@ print("=========================================================================
 print("The Refrigerator utensil is a: " + r.utensils + "| The type of milk is: " + r.milk)
 print("===========================================================================")
 
+""" Console output 
+Enter type of pot: Plastic
+Enter type of milk (e.g. whole or skim): Skim
+===========================================================================
+The stove utensil is a: Bakers spoon | The type of pot is: Plastic
+===========================================================================
+The Oven utensil is a: metal pan | The type of Meats are is: liver turkey meat loaf
+===========================================================================
+The Microwave utensil is a: Microwave safe plate | The type of Microwave items are: tupperware bowl etc
+===========================================================================
+The Refrigerator utensil is a: Metal pan | The type of milk is: Skim
+===========================================================================
+"""
