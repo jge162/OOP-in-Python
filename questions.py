@@ -76,7 +76,7 @@ Mom's name is Jane
 Dad's name is Joe
 Their child's mame is John
 ================================
-Mom is 15 years old 
-& Dad is 19 years old
+Mom is 15 years old =>
+& Dad is 19 years old =>
 ================================
 """
