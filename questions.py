@@ -23,15 +23,24 @@ class Parent:
             momAge = int(input("Enter moms age: "))
             if momAge < 18:
                 print("Too young to get married mom ")
-            elif momAge >= 18:
-                print("Perfect age mom, lets go. ")
+            else:
+                if momAge >= 18:
+                    print("Perfect age mom, lets go. ")
             dadAge = int(input("Enter dads age: "))
             if dadAge < 18:
                 print("Too young to get married dad ")
+            else:
+                if dadAge >= 18:
+                    print("Perfect age dad, lets go. ")
+
+            if momAge == dadAge:
+                print("Wow, your the same age?")
                 break
-            elif dadAge >= 18:
-                print("Perfect age dad, lets go. ")
-                break
+            else:
+                if momAge != dadAge:
+                    print("Why cant we ever be the same age")
+                    break
+
 
         Parent.count = momAge
         Parent.count2 = dadAge
