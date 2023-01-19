@@ -1,6 +1,5 @@
 
 class SLLNode:
-
     def __init__(self, data):
         self.data = data
         self.next = None
@@ -28,7 +27,6 @@ class SLLNode:
 
 
 class SLL:
-
     def __init__(self):
         self.head = None
 
