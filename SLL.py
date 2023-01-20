@@ -96,14 +96,6 @@ class SLList:
 
 
 """ console output below...
-PS C:\Users\escob\PycharmProjects\OOPs_in_Python> python3 -i SLL.py
->>> sll.add_front(10)
-Traceback (most recent call last):                        
-  File "<stdin>", line 1, in <module>                     
-NameError: name 'sll' is not defined. Did you mean: 'all'?
->>> sll = SLList()                                        
->>> sll.size()
-0   
 >>> sll.search_node(10)
 'List is empty'
 >>> sll.add_front(10)
