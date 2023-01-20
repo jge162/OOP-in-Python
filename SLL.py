@@ -96,53 +96,7 @@ class SLList:
 
 
 """ console output below...
->>> sll.search_node(10)
-'List is empty'
->>> sll.add_front(10)
->>> sll.search_node(10)
->>> sll.size()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "C:\Users\escob\PycharmProjects\OOPs_in_Python\SLL.py", line 60, in size
-    current_state = current_state.get_next_node
-AttributeError: 'function' object has no attribute 'get_next_node'
->>> sll.size()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "C:\Users\escob\PycharmProjects\OOPs_in_Python\SLL.py", line 60, in size
-    current_state = current_state.get_next_node
-AttributeError: 'function' object has no attribute 'get_next_node'
->>> sll.remoce_node(10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'SLList' object has no attribute 'remoce_node'. Did you mean: 'remove_node'?
->>> sll.remove(10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-AttributeError: 'SLList' object has no attribute 'remove'
->>> sll.remove_node(10)
->>> sll.size()
-0
->>> sll.search(10)
-Traceback (most recent call last):
-AttributeError: 'SLList' object has no attribute 'search'
->>> sll.node_empty()
-True
->>> sll.add_front(10)
->>> sll.size()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "C:\Users\escob\PycharmProjects\OOPs_in_Python\SLL.py", line 60, in size
-    current_state = current_state.get_next_node
-AttributeError: 'function' object has no attribute 'get_next_node'
->>> exit
-Use exit() or Ctrl-Z plus Return to exit
->>> exit()
-PS C:\Users\escob\PycharmProjects\OOPs_in_Python> python3 -i SLL.py
->>> sll.add_front(10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'sll' is not defined. Did you mean: 'all'?
+========================================
 >>> sll = SLList()
 >>> sll.add_front(10)
 >>> sll.add_front(20)
@@ -152,26 +106,11 @@ NameError: name 'sll' is not defined. Did you mean: 'all'?
 4
 >>> sll.search_node(30)
 >>> sll.size()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "C:\Users\escob\PycharmProjects\OOPs_in_Python\SLL.py", line 60, in size
-    current_state = current_state.get_next_node()  # forgot parenthesis
-AttributeError: 'function' object has no attribute 'get_next_node'
->>> sll.size()
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-  File "C:\Users\escob\PycharmProjects\OOPs_in_Python\SLL.py", line 60, in size
-    current_state = current_state.get_next_node()
-AttributeError: 'function' object has no attribute 'get_next_node'
->>> exit()
-PS C:\Users\escob\PycharmProjects\OOPs_in_Python> python3 -i SLL.py
+
+=======================================
 >>> sll = SLList()
 >>> sll.size()
 0
->>> Sll.add_node(10)
-Traceback (most recent call last):
-  File "<stdin>", line 1, in <module>
-NameError: name 'Sll' is not defined. Did you mean: 'sll'?
 >>> sll.add_front(10)
 >>> sll.size()
 1
