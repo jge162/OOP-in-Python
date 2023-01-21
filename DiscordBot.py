@@ -46,7 +46,7 @@ class MyClient(discord.Client):
                 await message.channel.send(f'See you later {username}')
                 return
             elif user_message.lower() == 'random':
-                response = f'This is your random number: {random.randrange(1000000)}'
+                response = f'This is your random number: {random.randrange(1000000)}'  # set random to million
                 await message.channel.send(response)
                 return
 
