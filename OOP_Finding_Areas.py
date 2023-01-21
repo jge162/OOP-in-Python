@@ -30,7 +30,7 @@ class Circle(ABC):
         self.circleRadius = circleRadius
 
     def area(self):  # You have to have correct spacing for self to work
-        return f"{{\"Area of a Triangle is: \" {int(3.14159265359 * self.circleRadius ** 2):.2f}}}"  # works
+        return f"{{\"Area of a Circle is: \" {int(3.14159265359 * self.circleRadius ** 2):.2f}}}"  # works
 
 
 class Square(ABC):
@@ -44,13 +44,13 @@ class Square(ABC):
 
 class Rectangle(ABC):
     def __init__(self, rectangleLength, rectangleWidth):
-        rectangleLength = int(input("Enter length of Triangle: "))
-        rectangleWidth = int(input("Enter width or Triangle: "))
+        rectangleLength = int(input("Enter length of rectangle: "))
+        rectangleWidth = int(input("Enter width or rectangle: "))
         self.rectangleWidth = rectangleWidth
         self.rectangleLength = rectangleLength
 
     def area(self):  # You have to have correct spacing for self to work
-        return f"{{\"Area of a Square is: \" {int(self.rectangleLength * self.rectangleWidth):.2f}}}"  # works
+        return f"{{\"Area of a rectangle is: \" {int(self.rectangleLength * self.rectangleWidth):.2f}}}"  # works
 
 
 class Trapezoid(ABC):
@@ -63,7 +63,7 @@ class Trapezoid(ABC):
         self.Height = Height  # formula is wrong below (1\2(a * b)*h checking formula online now
 
     def area(self):  # You have to have correct spacing for self to work
-        return f"{{\"Area of a Square is: \" {int(((self.Base1 + self.Base2) * self.Height) * 0.5):.2f}}}"  # works
+        return f"{{\"Area of a Trapezoid is: \" {int(((self.Base1 + self.Base2) * self.Height) * 0.5):.2f}}}"  # works
 
 
 class Ellipse(ABC):
