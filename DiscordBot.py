@@ -10,14 +10,14 @@ class MyClient(discord.Client):
         print('Logged on as', self.user)
         await self.change_presence(status=discord.Status.online, activity=discord.Game('Apex Legends'))
         print('Bot is Ready')
-
+    """ 
     @commands.command()
     async def random(self, ctx, username=None):
         items = ["item 1", "item 2", "item 3"]
 
         await ctx.send(random.choice(items))
         return
-
+    """
     """
     @commands.has_permissions(administrator=True)
     @client.command(aliases=["purge", "delete", "clear"])
