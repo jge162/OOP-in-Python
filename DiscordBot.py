@@ -76,4 +76,4 @@ class MyClient(discord.Client):
 intents = discord.Intents.default()
 intents.message_content = True
 client = MyClient(intents=intents, command_prefix='/')
-client.run('MTA2NTg5MDY4ODYzMTMyNDY5Mg.G2ta7l.az3ySPgT6BxPO8riQicUeRcOipF4tJrtgD20kc')
+client.run('')
