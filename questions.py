@@ -2,10 +2,6 @@
 #  OOP practice program
 
 class Parent:
-    count = None  # initialize
-    count2 = None  # initialize
-    mom = None  # initialize
-    dad = None  # initialize
 
     def __init__(self):
         print("Parent class initialized")
