@@ -12,7 +12,6 @@ class Lexus:  # car is a lexus with leather interior and navigation with a costs
 
     def lexusDiscount(self, discountAmt, leather, navigation, costs):
         costs = float(input("Enter vehicle price: "))
-
         self.leather = leather  # declarations
         self.navigation = navigation
         self.costs = costs
@@ -21,14 +20,12 @@ class Lexus:  # car is a lexus with leather interior and navigation with a costs
 
     def lexusCost(self):
         _discountAmt = float(input("Enter discount %: "))
-        self.costs - (self.costs * self.discountAmt)
+        var = self.costs - (self.costs * self.discountAmt)
         return self.costs
 
 
 blackLexus = Lexus()
 blackLexus.lexusDiscount(0.5, "Black Leather", "Touch screen Navigation", 8000)  # car is 50% off
-# print(blackLexus.lexusCost())  # to see new price after discount
-
 print(blackLexus.leather)
 print(blackLexus.navigation)
 print(blackLexus.costs * (blackLexus.lexusDiscount(0.25, "Black Leather", "Touch screen Navigation", blackLexus.costs)))
