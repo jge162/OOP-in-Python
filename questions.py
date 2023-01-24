@@ -49,7 +49,7 @@ class Parent:
 class Child(Parent):  # child of Parent
     def __init__(self, childName):
         super().__init__()
-        # childName = input(" Enter child's name: ")
+        childName = input(" Enter child's name: ")
         self.childName = childName
         print("Child class initialized")
 
@@ -69,19 +69,21 @@ print("================================")
 
 """
 Parent class initialized
+ Enter child's name: Jacob
 Child class initialized
-Enter moms age: 15
-Too young to get married mom 
-Enter dads age: 19
+Enter moms age: 21
+Perfect age mom, lets go. 
+Enter dads age: 20
 Perfect age dad, lets go. 
+Why cant we ever be the same age
 Enter moms name: Jane
-Enter dads name: Joe
+Enter dads name: Doe
 ================================
 Mom's name is Jane
-Dad's name is Joe
-Their child's mame is John
+Dad's name is Doe
+Their child's mame is Jacob
 ================================
-Mom is 15 years old 
-& Dad is 19 years old
+Mom is 21 years old 
+& Dad is 20 years old
 ================================
 """
