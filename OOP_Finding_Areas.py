@@ -74,7 +74,18 @@ class Ellipse(ABC):
         self.axisB = axisB  # need to add full value of pie for correct answer
 
     def area(self):  # You have to have correct spacing for self to work
-        return f"{{\"Area of a Square is: \" {((self.axisA * self.axisB) * 3.14159265359):.2f}}}"
+        return f"{{\"Area of a Ellipse is: \" {((self.axisA * self.axisB) * 3.14159265359):.2f}}}"
+
+
+class Kite(ABC):
+    def __init__(self, diagonalA, diagonalB):
+        diagonalA = int(input("Enter Kite diagonal A: "))
+        diagonalB = int(input("Enter Kite diagonal B: "))
+        self.diagonalA = diagonalA
+        self.diagonalB = diagonalB
+
+    def area(self):
+        return f"{{\"Area of a Kite is: \" {((self.diagonalA * self.diagonalB) / 2):.2f}}}"
 
 
 print("============================")
@@ -96,32 +107,36 @@ print("============================")
 e = Ellipse(1, 2)  # dummy declarations here for axis's
 print((e.area()))  # print the area after inputs to Ellipse
 print("============================")
-
-
-""" output is as expected...
-============================
-Please enter Triangle Base: 10
-Please enter Triangle Height: 6
-{"Area of a Triangle is: " 30.00}
-============================
-Enter the Radius of the Circle: 10
-{"Area of a Triangle is: " 314.00}
-============================
-Enter one side of a Square: 10
-{"Area of a Square is: " 100.00}
-============================
-Enter length of Triangle: 10
-Enter width or Triangle: 15
-{"Area of a Square is: " 150.00}
-============================
-Enter base A of Trapezoid: 10
-Enter base B of Trapezoid: 15
-Enter height of Trapezoid: 20
-{"Area of a Square is: " 250.00}
-============================
-Enter first axis A: 5
-Enter first axis B: 2
-{"Area of a Square is: " 31.42}
-============================
+k = Kite(1, 2)  # dummy declarations here for axis's
+print((k.area()))  # print the area after inputs to Kite
+print("============================")
 
 """
+============================
+Please enter Triangle Base: 22
+Please enter Triangle Height: 6
+{"Area of a Triangle is: " 66.00}
+============================
+Enter the Radius of the Circle: 99
+{"Area of a Circle is: " 30790.00}
+============================
+Enter one side of a Square: 19
+{"Area of a Square is: " 361.00}
+============================
+Enter length of rectangle: 11
+Enter width or rectangle: 915
+{"Area of a rectangle is: " 10065.00}
+============================
+Enter base A of Trapezoid: 10
+Enter base B of Trapezoid: 20
+Enter height of Trapezoid: 30
+{"Area of a Trapezoid is: " 450.00}
+============================
+Enter first axis A: 2
+Enter first axis B: 3
+{"Area of a Ellipse is: " 18.85}
+============================
+Enter Kite diagonal A: 15
+Enter Kite diagonal B: 33
+{"Area of a Kite is: " 247.50}
+============================"""
