@@ -6,4 +6,4 @@
 ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/jge162/OOP_in_Python?color=red&label=Closed%20Pull%20requests&logo=GitHub&style=for-the-badge)
 
 The programs in this folder are ones I am developing 
-as part of my current educational experiences.
+as part of my current educational experiences. nothing more. thanks
