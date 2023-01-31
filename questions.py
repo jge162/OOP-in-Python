@@ -1,4 +1,3 @@
-#  questions
 #  OOP practice program
 
 class Parent:

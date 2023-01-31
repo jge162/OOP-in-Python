@@ -88,6 +88,28 @@ class Kite(ABC):
         return f"{{\"Area of a Kite is: \" {((self.diagonalA * self.diagonalB) / 2):.2f}}}"
 
 
+class Parallelogram(ABC):
+    def __init__(self, Base, Height):
+        Base = int(input("Enter base of Parallelogram: "))
+        Height = int(input("Enter height of Parallelogram: "))
+        self.Base = Base
+        self.Height = Height
+
+    def area(self):
+        return f"{{\"Area of a Parallelogram is: \" {int(self.Base * self.Height):.2f}}}"
+
+
+class Rhombus(ABC):
+    def __init__(self, Diagonal1, Diagonal2):
+        Diagonal1 = int(input("Enter first diagonal of Rhombus: "))
+        Diagonal2 = int(input("Enter second diagonal of Rhombus: "))
+        self.Diagonal1 = Diagonal1
+        self.Diagonal2 = Diagonal2
+
+    def area(self):
+        return f"{{\"Area of a Rhombus is: \" {int((self.Diagonal1 * self.Diagonal2) * 0.5):.2f}}}"
+
+
 print("============================")
 t = Triangle(15, 6)  # dummy declarations here for base and height
 print(t.area())  # print the area after inputs to triangle
@@ -107,11 +129,7 @@ print("============================")
 e = Ellipse(1, 2)  # dummy declarations here for axis's
 print((e.area()))  # print the area after inputs to Ellipse
 print("============================")
-k = Kite(1, 2)  # dummy declarations here for axis's
-print((k.area()))  # print the area after inputs to Kite
-print("============================")
 
-"""
 ============================
 Please enter Triangle Base: 22
 Please enter Triangle Height: 6
@@ -136,7 +154,4 @@ Enter first axis A: 2
 Enter first axis B: 3
 {"Area of a Ellipse is: " 18.85}
 ============================
-Enter Kite diagonal A: 15
-Enter Kite diagonal B: 33
-{"Area of a Kite is: " 247.50}
-============================"""
+
