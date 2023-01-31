@@ -1,34 +1,42 @@
-name: Deploy to servers
-
 on:
   push:
-    branches:
-      - main
-
+    tags:
+      - 'v*'
 env:
-  DEPLOY_HOST1: example.com
-  DEPLOY_HOST2: another-example.com
-
+  FILE_NAME: "Dark-Everywhere"
+  FILE_EXTENSION: ".zip"
+  BRANCHES: "1.19.3 1.19 1.18"
+  PACKAGE_NAME: "assets pack.mcmeta pack.png"
+  TAG_NAME: "${{ env.TAG_NAME || '0.0.1' }}"
 jobs:
-  deploy:
+  release:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
-
-    - name: Build the application
-      run: |
-        # commands to build the application
-
-    - name: Deploy to first server
+    - name: Create a release
+      uses: actions/create-release@v1
       env:
-        DEPLOY_HOST: ${{ env.DEPLOY_HOST1 }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: "${{ env.TAG_NAME }}"
+        release_name: "Dark Everywhere ${{ env.TAG_NAME }}🌙"
+        draft: true
+        prerelease: false
+    - name: Generate a zip archive for each branch
       run: |
-        # commands to deploy the build to the first server
-
-    - name: Deploy to second server
+        for branch in ${BRANCHES}; do
+          zip -r "$FILE_NAME-$branch$FILE_EXTENSION" $PACKAGE_NAME
+        done
+    - name: Upload files
+      uses: actions/upload-artifact@v2
+      with:
+        name: "$FILE_NAME-$branch$FILE_EXTENSION"
+        path: "$FILE_NAME-$branch$FILE_EXTENSION"
+    - name: Update release
+      uses: actions/update-release@v1
       env:
-        DEPLOY_HOST: ${{ env.DEPLOY_HOST2 }}
-      run: |
-        # commands to deploy the build to the second server
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        release_id: ${{ env.RELEASE_ID }}
+        body: "Build description here"
