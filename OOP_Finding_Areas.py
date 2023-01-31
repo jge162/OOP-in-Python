@@ -77,6 +77,28 @@ class Ellipse(ABC):
         return f"{{\"Area of a Square is: \" {((self.axisA * self.axisB) * 3.14159265359):.2f}}}"
 
 
+class Parallelogram(ABC):
+    def __init__(self, Base, Height):
+        Base = int(input("Enter base of Parallelogram: "))
+        Height = int(input("Enter height of Parallelogram: "))
+        self.Base = Base
+        self.Height = Height
+
+    def area(self):
+        return f"{{\"Area of a Parallelogram is: \" {int(self.Base * self.Height):.2f}}}"
+
+
+class Rhombus(ABC):
+    def __init__(self, Diagonal1, Diagonal2):
+        Diagonal1 = int(input("Enter first diagonal of Rhombus: "))
+        Diagonal2 = int(input("Enter second diagonal of Rhombus: "))
+        self.Diagonal1 = Diagonal1
+        self.Diagonal2 = Diagonal2
+
+    def area(self):
+        return f"{{\"Area of a Rhombus is: \" {int((self.Diagonal1 * self.Diagonal2) * 0.5):.2f}}}"
+
+
 print("============================")
 t = Triangle(15, 6)  # dummy declarations here for base and height
 print(t.area())  # print the area after inputs to triangle
@@ -96,7 +118,12 @@ print("============================")
 e = Ellipse(1, 2)  # dummy declarations here for axis's
 print((e.area()))  # print the area after inputs to Ellipse
 print("============================")
-
+pa = Parallelogram(10, 15)  # dummy declarations here for Parallelogram
+print((pa.area()))  # print the area after inputs to Parallelogram
+print("============================")
+rh = Rhombus(10, 15)  # dummy declarations here for Rhombus
+print((rh.area()))  # print the area after inputs to Rhombus
+print("============================")
 
 """ output is as expected...
 ============================
@@ -123,5 +150,4 @@ Enter first axis A: 5
 Enter first axis B: 2
 {"Area of a Square is: " 31.42}
 ============================
-
 """
