@@ -125,7 +125,8 @@ rh = Rhombus(10, 15)  # dummy declarations here for Rhombus
 print((rh.area()))  # print the area after inputs to Rhombus
 print("============================")
 
-""" output is as expected...
+""" 
+output is as expected
 ============================
 Please enter Triangle Base: 10
 Please enter Triangle Height: 6
