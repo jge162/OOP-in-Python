@@ -10,23 +10,6 @@ class MyClient(discord.Client):
         print('Logged on as', self.user)
         await self.change_presence(status=discord.Status.online, activity=discord.Game('Apex Legends'))
         print('Bot is Ready')
-    """ 
-    @commands.command()
-    async def random(self, ctx, username=None):
-        items = ["item 1", "item 2", "item 3"]
-
-        await ctx.send(random.choice(items))
-        return
-    """
-    """
-    @commands.has_permissions(administrator=True)
-    @client.command(aliases=["purge", "delete", "clear"])
-    async def sell(self, ctx, amount: int):
-        await ctx.channel.purge(limit=amount + 1)
-        embed = discord.Embed(description=f"**Successfully Sold {amount} message(s) in {ctx.channel}!**",
-                              color=discord.Colour.green())
-        await ctx.send(embed=embed, delete_after=5)
-     """
 
     async def on_message(self, message):
         # don't respond to ourselves
