@@ -16,7 +16,7 @@ class Lexus:  # car is a lexus with leather interior and navigation with a costs
         self.navigation = navigation
         self.costs = costs
         self.discountAmt = discountAmt
-        return discountAmt
+        return discountAmt  # return discountAmt
 
     def lexusCost(self):
         _discountAmt = float(input("Enter discount %: "))
