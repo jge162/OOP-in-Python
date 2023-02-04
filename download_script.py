@@ -44,4 +44,5 @@ for filename in os.listdir(downloads_folder):
 
 print("Downloads folder organized.")
 
-# python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
+# sudo python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
+# chmod +x /Users/home/Downloads
