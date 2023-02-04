@@ -58,5 +58,9 @@ run these commands in terminal of host computer
 sudo python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
 python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
 chmod +x /Users/home/Downloads
+
+output ->
+Password:
+Downloads folder organized.
 """
 
