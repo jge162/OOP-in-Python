@@ -20,7 +20,16 @@ extension_map = {
     "mp3": "Audio Files",
     "wav": "Audio Files",
     "mp4": "Video Files",
-    "mkv": "Video Files"
+    "mkv": "Video Files",
+    "torrent": "Torrent files",
+    "zip": "Zip Files",
+    "heic": "Image Files",
+    "txt": "PDF Files",
+    "avi": "Video Files",
+    "c": "Programming Files",
+    "vhd": "Programming Files",
+    "mov": "Video Files"
+
 }
 
 # Loop through all the files in the Downloads folder
@@ -44,6 +53,7 @@ for filename in os.listdir(downloads_folder):
 
 print("Downloads folder organized.")
 
+# run these commands in terminal of host computer
 # sudo python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
 # python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
 # chmod +x /Users/home/Downloads
