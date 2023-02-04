@@ -4,7 +4,7 @@ import shutil
 # Set the path to the Downloads folder
 downloads_folder = "/Users/home/Downloads"
 
-# Create a dictionary to map file extensions to subfolder names
+# Create a dictionary to map file extensions to sub_folder names
 extension_map = {
     "pdf": "PDF Files",
     "doc": "Word Files",
