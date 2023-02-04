@@ -43,3 +43,5 @@ for filename in os.listdir(downloads_folder):
         shutil.move(file_path, os.path.join(subfolder_path, filename))
 
 print("Downloads folder organized.")
+
+# python3 /Users/home/Documents/GitHub/OOP_in_Python/download_script.py
