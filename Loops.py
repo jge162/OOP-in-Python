@@ -1,5 +1,5 @@
 #
-# Example file for working with loops
+# Example file for working with functions & loops
 # LinkedIn Learning Python course by Joe Marini
 #
 
